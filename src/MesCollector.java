@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class MesCollector {
 
     private int mes;
@@ -35,11 +37,31 @@ if (dia<1 || dia> tempsDiasMes.length){
             setTempsDiasMes(dia-1,temp);
         }
     }
+/*
+public String toString(){
+    enero.toString();
 
 
+        for (int i=0;i<tempsDiasMes.length;i++){
+        if (tempsDiasMes[i]==0){
+            System.out.print("No data ,");
+        }else{
+            System.out.print(tempsDiasMes[i]+",");
+        }
+    }
 
+}
 
-
+*/
+public void printTemperatureMonth(){
+        for (int i=0;i<tempsDiasMes.length;i++){
+            if (tempsDiasMes[i]==0){
+                System.out.print("No data ,");
+            }else{
+                System.out.print(tempsDiasMes[i]+",");
+            }
+        }
+}
 
 
 

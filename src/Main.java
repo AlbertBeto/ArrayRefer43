@@ -38,7 +38,7 @@ int[] copyarray= new  int[6];
         MesCollector Enero = new MesCollector(1,2022);
         MesCollector Diciembre = new MesCollector(12,2022);
 
-
+/*
         ArrayOperations.print(Enero.getCuantosDiasMes());
         System.out.println(Enero.getAnyo());
         Enero.setTemperatura(10,25);
@@ -51,8 +51,8 @@ int[] copyarray= new  int[6];
         Enero.setTemperatura(9,-4);
         System.out.println(Enero.getTemperatura(10));
         ArrayOperations.print(Enero.getCuantosDiasMes());
+*/
 
-/*
         Scanner sc = new Scanner( System.in);
         MesCollector enero = new MesCollector( 1, 2021);
         String respuesta = "Y";
@@ -69,9 +69,9 @@ int[] copyarray= new  int[6];
             System.out.print("Continuar (Y/N)? ");
             respuesta = sc.next();
         }
-        System.out.println(enero);
+        System.out.println(enero.toString());
+        enero.printTemperatureMonth();
 
-*/
 
 
 
