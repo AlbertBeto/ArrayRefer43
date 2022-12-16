@@ -56,9 +56,9 @@ public String toString(){
 public void printTemperatureMonth(){
         for (int i=0;i<tempsDiasMes.length;i++){
             if (tempsDiasMes[i]==0){
-                System.out.print("No data ,");
+                System.out.print((i+1)+ ": " +"No data ,");
             }else{
-                System.out.print(tempsDiasMes[i]+",");
+                System.out.print((i+1)+ ": " +tempsDiasMes[i]+",");
             }
         }
 }
