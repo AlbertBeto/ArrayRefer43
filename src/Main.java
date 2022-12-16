@@ -34,11 +34,15 @@ int[] copyarray= new  int[6];
         */
 
         MesCollector Enero = new MesCollector(1,2022);
+        MesCollector Diciembre = new MesCollector(12,2022);
 
 
         ArrayOperations.print(Enero.getCuantosDiasMes());
         System.out.println(Enero.getAnyo());
+        Enero.setTemperatura(10,25);
+        Enero.setTemperatura(50,25);
         System.out.println(Enero.getTemperatura(10));
+        ArrayOperations.print(Enero.getCuantosDiasMes());
 
 
     //main

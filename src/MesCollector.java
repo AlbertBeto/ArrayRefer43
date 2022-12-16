@@ -4,26 +4,36 @@ public class MesCollector {
     private int anyo;
     private int diames;
 
-    private int[] cuantosDiasMes;
+    private int[] tempsDiasMes;
 
     public MesCollector(int mes, int anyo){
 setMes(mes);
 setAnyo(anyo);
-setCuantosDiasMes(creaArraysMeses(mes));
+setTempsDiasMes(creaArraysMeses(mes));
     }
 
 
     public int[] creaArraysMeses(int mes){
         int[] diasMesAnyo = {0,31,28,31,30,31,30,31,31,30,31,30,31};
         int[] creado = new int[diasMesAnyo[mes]];
+        for (int i=0;i<creado.length;i++){
+            creado[i]=0;
+        }
         return creado;
     }
 
     public int getTemperatura(int dia){
-if (dia<1 || dia> cuantosDiasMes.length){
+if (dia<1 || dia> tempsDiasMes.length){
     return -1;
 }
-        return cuantosDiasMes[dia];
+        return tempsDiasMes[dia];
+    }
+
+
+    public void setTemperatura(int dia,int temp){
+        if (dia>=1 && dia<= tempsDiasMes.length){
+            setTempsDiasMes(dia,temp);
+        }
     }
 
 
@@ -61,13 +71,15 @@ if (dia<1 || dia> cuantosDiasMes.length){
     }
 
     public int[] getCuantosDiasMes() {
-        return cuantosDiasMes;
+        return tempsDiasMes;
     }
 
-    public void setCuantosDiasMes(int[] cuantosDiasMes) {
-        this.cuantosDiasMes = cuantosDiasMes;
+    public void setTempsDiasMes(int dia, int temp) {
+        this.tempsDiasMes[dia] =temp;
     }
-
+    public void setTempsDiasMes(int[] inicio) {
+        this.tempsDiasMes=inicio;
+    }
 
     //class
 }
