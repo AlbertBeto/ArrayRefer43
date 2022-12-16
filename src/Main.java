@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -31,8 +33,8 @@ int[] copyarray= new  int[6];
 
 
         ArrayOperations.sum(array);
-        */
 
+*/
         MesCollector Enero = new MesCollector(1,2022);
         MesCollector Diciembre = new MesCollector(12,2022);
 
@@ -40,9 +42,38 @@ int[] copyarray= new  int[6];
         ArrayOperations.print(Enero.getCuantosDiasMes());
         System.out.println(Enero.getAnyo());
         Enero.setTemperatura(10,25);
-        Enero.setTemperatura(50,25);
+        Enero.setTemperatura(31,25);
+        Enero.setTemperatura(1,25);
+        Enero.setTemperatura(30,25);
+        Enero.setTemperatura(-4,25);
+        Enero.setTemperatura(32,25);
+        Enero.setTemperatura(11,40);
+        Enero.setTemperatura(9,-4);
         System.out.println(Enero.getTemperatura(10));
         ArrayOperations.print(Enero.getCuantosDiasMes());
+
+/*
+        Scanner sc = new Scanner( System.in);
+        MesCollector enero = new MesCollector( 1, 2021);
+        String respuesta = "Y";
+        while (respuesta.toUpperCase().charAt(0) == 'Y') {
+            System.out.print("Inserta día ");
+            int dia = sc.nextInt();
+            System.out.print("Inserta temperatura ");
+            int temperatura = sc.nextInt();
+            if (enero.getTemperatura(dia) == -1){
+                System.out.println(" error de entrada ");
+            } else {
+                enero.setTemperatura(dia, temperatura );
+            }
+            System.out.print("Continuar (Y/N)? ");
+            respuesta = sc.next();
+        }
+        System.out.println(enero);
+
+*/
+
+
 
 
     //main

@@ -26,13 +26,13 @@ setTempsDiasMes(creaArraysMeses(mes));
 if (dia<1 || dia> tempsDiasMes.length){
     return -1;
 }
-        return tempsDiasMes[dia];
+        return tempsDiasMes[dia-1];
     }
 
 
     public void setTemperatura(int dia,int temp){
         if (dia>=1 && dia<= tempsDiasMes.length){
-            setTempsDiasMes(dia,temp);
+            setTempsDiasMes(dia-1,temp);
         }
     }
 
