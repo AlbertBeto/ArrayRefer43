@@ -38,6 +38,7 @@ int[] copyarray= new  int[6];
 
         ArrayOperations.print(Enero.getCuantosDiasMes());
         System.out.println(Enero.getAnyo());
+        System.out.println(Enero.getTemperatura(10));
 
 
     //main

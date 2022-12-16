@@ -12,20 +12,29 @@ setAnyo(anyo);
 setCuantosDiasMes(creaArraysMeses(mes));
     }
 
-/*
-public int getTemperatura (int dia){
-    if (dia>0 && dia<13){
-        return ;
-    }
-}
-*/
-
 
     public int[] creaArraysMeses(int mes){
         int[] diasMesAnyo = {0,31,28,31,30,31,30,31,31,30,31,30,31};
         int[] creado = new int[diasMesAnyo[mes]];
         return creado;
     }
+
+    public int getTemperatura(int dia){
+if (dia<1 || dia> cuantosDiasMes.length){
+    return -1;
+}
+        return cuantosDiasMes[dia];
+    }
+
+
+
+
+
+
+
+
+
+
 
     public int getMes() {
         return mes;
