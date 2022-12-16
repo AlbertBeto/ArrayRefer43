@@ -21,7 +21,7 @@ int[] copyarray= new  int[6];
         ArrayOperations.print(pelosMovidos);
         ArrayOperations.removeOddNumbers(pelos);
         ArrayOperations.printRange(pelos,6,7);
-*/
+
         System.out.println(ArrayOperations.max(array));
 
         ArrayOperations.copy(array,copyarray);
@@ -31,6 +31,14 @@ int[] copyarray= new  int[6];
 
 
         ArrayOperations.sum(array);
+        */
+
+        MesCollector Enero = new MesCollector(1,2022);
+
+
+        ArrayOperations.print(Enero.getCuantosDiasMes());
+        System.out.println(Enero.getAnyo());
+
 
     //main
     }
