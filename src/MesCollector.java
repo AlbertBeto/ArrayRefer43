@@ -9,9 +9,9 @@ public class MesCollector {
     private int[] tempsDiasMes;
 
     public MesCollector(int mes, int anyo){
-setMes(mes);
-setAnyo(anyo);
-setTempsDiasMes(creaArraysMeses(mes));
+        setMes(mes);
+        setAnyo(anyo);
+        setTempsDiasMes(creaArraysMeses(mes));
     }
 
 
@@ -25,9 +25,9 @@ setTempsDiasMes(creaArraysMeses(mes));
     }
 
     public int getTemperatura(int dia){
-if (dia<1 || dia> tempsDiasMes.length){
-    return -1;
-}
+        if (dia<1 || dia> tempsDiasMes.length){
+            return -1;
+        }
         return tempsDiasMes[dia-1];
     }
 
@@ -53,17 +53,17 @@ public String toString(){
 }
 
 */
-public void printTemperatureMonth(){
+    public void printTemperatureMonth(){
+        System.out.println(getAnyo());
+        System.out.println(getMes());
         for (int i=0;i<tempsDiasMes.length;i++){
             if (tempsDiasMes[i]==0){
-                System.out.print((i+1)+ ": " +"No data ,");
+                System.out.println((i+1)+ ": " +"No data ,");
             }else{
-                System.out.print((i+1)+ ": " +tempsDiasMes[i]+",");
+                System.out.println((i+1)+ ": " +tempsDiasMes[i]+",");
             }
         }
-}
-
-
+    }
 
 
 

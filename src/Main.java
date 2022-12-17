@@ -35,8 +35,8 @@ int[] copyarray= new  int[6];
         ArrayOperations.sum(array);
 
 */
-        MesCollector Enero = new MesCollector(1,2022);
-        MesCollector Diciembre = new MesCollector(12,2022);
+       // MesCollector Enero = new MesCollector(1,2022);
+       // MesCollector Diciembre = new MesCollector(12,2022);
 
 /*
         ArrayOperations.print(Enero.getCuantosDiasMes());
@@ -54,7 +54,7 @@ int[] copyarray= new  int[6];
 */
 
         Scanner sc = new Scanner( System.in);
-        MesCollector enero = new MesCollector( 1, 2021);
+        MesCollector enero = new MesCollector( 2, 2021);
         String respuesta = "Y";
         while (respuesta.toUpperCase().charAt(0) == 'Y') {
             System.out.print("Inserta día ");
